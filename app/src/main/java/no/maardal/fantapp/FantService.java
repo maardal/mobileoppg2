@@ -48,6 +48,14 @@ public class FantService {
                 }, (Response.ErrorListener) this, token));
     }
 
+    public FantService getInstance() {
+        return SINGLETON;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
     static class SecuredJsonObjectRequest extends JsonObjectRequest {
         String token;
 

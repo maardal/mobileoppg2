@@ -4,14 +4,12 @@ package no.maardal.fantapp.ui.login;
  * Class exposing authenticated user details to the UI.
  */
 class LoggedInUserView {
-    private String displayName;
-    //... other data fields that may be accessible to the UI
+    private String token;
 
-    LoggedInUserView(String displayName) {
-        this.displayName = displayName;
+    LoggedInUserView(String token) {
+        this.token = token;
     }
 
-    String getDisplayName() {
-        return displayName;
+    public String getToken() {
     }
 }
